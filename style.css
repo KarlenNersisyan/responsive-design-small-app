@@ -1,0 +1,774 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 72px;
+  padding-left: 164px;
+  font-size: 64px;
+}
+
+.filterWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 164px;
+  padding-right: 172px;
+  margin-bottom: 56px;
+}
+
+.filterItemRow {
+  display: flex;
+}
+
+.filteredList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterBy {
+  font-weight: 700;
+  font-size: 32px;
+  margin-right: 48px;
+}
+
+.filterItem {
+  border: 1px solid #41415d;
+  border-radius: 35px;
+  cursor: pointer;
+  padding: 16px 24px;
+  font-size: 20px;
+  margin-right: 24px;
+}
+
+.sortByList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sortByDate {
+  font-weight: 700;
+  font-size: 32px;
+  margin-right: 48px;
+}
+
+.newest {
+  min-width: 203px;
+}
+
+.newestSelect {
+  width: 100%;
+  padding: 16px 60px 16px 24px;
+  font-size: 20px;
+  border-color: #41415d;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 172px;
+  padding-right: 172px;
+  justify-content: space-between;
+}
+
+.contPart {
+  width: calc(50% - (20px * 2));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.info {
+  width: 49%;
+  background: #ffffff;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoBackground {
+  width: 49%;
+  background: #eef1f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textInfo {
+  font-weight: 600;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 32px;
+  padding-top: 10%;
+}
+
+.date {
+  margin-top: 10%;
+  color: #41415d;
+  padding-left: 40px;
+  font-size: 24px;
+}
+
+.viewEvent {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 32px;
+  color: #41415d;
+  cursor: pointer;
+}
+
+.textTitle {
+  color: #41415d;
+  padding-left: 40px;
+  padding-top: 8%;
+  font-size: 24px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  font-size: 2px;
+}
+
+.arrowButton {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  color: #41415d;
+}
+
+.image {
+  width: 51%;
+  position: relative;
+  padding-top: 61%;
+}
+
+.imgSize1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.moreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+  min-width: 160px;
+  padding-right: 172px;
+  margin-top: 72px;
+}
+
+.universal {
+  background: transparent;
+  color: #41415d;
+  font-size: 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1441px) {
+  .title {
+    padding-left: 124px;
+    font-size: 56px;
+    margin-bottom: 64px;
+  }
+
+  .filterItem {
+    font-size: 16px;
+    margin-right: 16px;
+    padding: 16px 24px;
+  }
+
+  .filterWrapper {
+    padding-left: 124px;
+    padding-right: 124px;
+    margin-bottom: 48px;
+  }
+
+  .container {
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  .contPart {
+    width: calc(50% - (16px * 2));
+    margin-bottom: 32px;
+  }
+
+  .filterBy {
+    font-size: 24px;
+    margin-right: 40px;
+  }
+
+  .newest {
+    min-width: 169px;
+  }
+
+  .sortByDate {
+    font-size: 24px;
+    margin-right: 40px;
+  }
+
+  .newestSelect {
+    padding: 16px 51px 16px 24px;
+    font-size: 16px;
+  }
+
+  .textTitle {
+    padding-left: 32px;
+    padding-top: 32px;
+    font-size: 20px;
+  }
+
+  .textInfo {
+    font-size: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .arrow {
+    padding-right: 32px;
+    padding-bottom: 24px;
+  }
+
+  .date {
+    font-size: 20px;
+    padding-left: 32px;
+  }
+
+  .viewEvent {
+    padding-right: 42px;
+    padding-bottom: 32px;
+    font-size: 24px;
+  }
+
+  .more {
+    padding-right: 124px;
+    margin-top: 64px;
+  }
+
+  .universal {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1281px) {
+  .title {
+    padding-left: 86px;
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+
+  .filterItem {
+    font-size: 14px;
+    margin-right: 16px;
+    padding: 12px 20px;
+  }
+
+  .filterWrapper {
+    padding-left: 86px;
+    padding-right: 94px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 86px;
+    padding-right: 94px;
+  }
+
+  .contPart {
+    width: calc(50% - (12px * 2));
+    margin-bottom: 24px;
+  }
+
+  .filterBy {
+    font-size: 20px;
+    margin-right: 40px;
+  }
+
+  .newest {
+    min-width: 153px;
+  }
+
+  .sortByDate {
+    font-size: 20px;
+    margin-right: 48px;
+  }
+
+  .newestSelect {
+    padding: 12px 47px 12px 20px;
+    font-size: 14px;
+  }
+
+  .textTitle {
+    font-size: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .textInfo {
+    font-size: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .arrow {
+    padding-right: 31px;
+    padding-bottom: 32px;
+  }
+
+  .date {
+    font-size: 16px;
+    padding-left: 32px;
+  }
+
+  .viewEvent {
+    padding-right: 31px;
+    padding-bottom: 31px;
+    font-size: 20px;
+  }
+
+  .more {
+    padding-right: 94px;
+    margin-top: 56px;
+    min-width: 120px;
+  }
+
+  .universal {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .title {
+    padding-left: 78px;
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+
+  .filterWrapper {
+    padding-left: 78px;
+    padding-right: 79px;
+    margin-bottom: 40px;
+  }
+
+  .filterBy {
+    font-size: 20px;
+    margin-right: 40px;
+  }
+
+  .filterItem {
+    font-size: 14px;
+    margin-right: 16px;
+    padding: 12px 20px;
+  }
+
+  .container {
+    padding-left: 78px;
+    padding-right: 79px;
+  }
+
+  .contPart {
+    width: calc(50% - (9px * 2));
+    margin-bottom: 18px;
+  }
+
+  .sortByDate {
+    margin-right: 40px;
+    font-size: 20px;
+  }
+
+  .textTitle {
+    padding-left: 24px;
+    padding-top: 24px;
+    font-size: 14px;
+  }
+
+  .textInfo {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 20px;
+  }
+
+  .arrow {
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
+
+  .newest {
+    min-width: 153px;
+  }
+
+  .newestSelect {
+    font-size: 14px;
+    padding: 12px 47px 12px 20px;
+  }
+
+  .date {
+    font-size: 14px;
+    padding-left: 24px;
+  }
+
+  .viewEvent {
+    font-size: 20px;
+    padding-right: 24px;
+    padding-bottom: 23px;
+  }
+
+  .more {
+    padding-right: 79px;
+    margin-top: 48px;
+    min-width: 100px;
+  }
+
+  .universal {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .title {
+    padding-left: 67px;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .filterItem {
+    font-size: 14px;
+    margin-right: 16px;
+    padding: 12px 20px;
+  }
+
+  .filterWrapper {
+    padding-left: 67px;
+    padding-right: 67px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+
+  .contPart {
+    width: calc(50% - (10px * 2));
+    margin-bottom: 20px;
+  }
+
+  .filterBy {
+    font-size: 18px;
+    margin-right: 32px;
+  }
+
+  .sortByDate {
+    font-size: 18px;
+    margin-right: 32px;
+  }
+
+  .newestSelect {
+    padding: 12px 47px 12px 20px;
+    font-size: 14px;
+  }
+
+  .textTitle {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  .textInfo {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .arrow {
+    padding-right: 22px;
+    padding-bottom: 20px;
+  }
+
+  .date {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .viewEvent {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .newest {
+    min-width: 153px;
+  }
+
+  .more {
+    padding-right: 67px;
+    margin-top: 40px;
+  }
+
+  .universal {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    padding-left: 34px;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .filteredList {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .container {
+    display: flex;
+    padding-left: 38px;
+    padding-right: 38px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .filterItemRow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 14px;
+  }
+
+  .filterItem {
+    font-size: 14px;
+    padding: 12px 20px;
+    margin-top: 24px;
+    margin-right: 16px;
+  }
+
+  .filterWrapper {
+    padding-left: 34px;
+    padding-right: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    margin-bottom: 40px;
+  }
+
+  .filterBy {
+    font-size: 18px;
+  }
+
+  .sortByList {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .sortByDate {
+    font-size: 18px;
+  }
+
+  .newest {
+    min-width: 153px;
+  }
+
+  .newestSelect {
+    font-size: 14px;
+    background-color: #d3dee7;
+    padding: 12px 47px 12px 20px;
+  }
+
+  .contPart {
+    width: calc(50% - (10px * 2));
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    width: 100%;
+    padding-top: 93%;
+  }
+
+  .info {
+    min-height: 242px;
+    width: 100%;
+  }
+
+  .infoBackground {
+    min-height: 242px;
+    width: 100%;
+  }
+
+  .more {
+    margin-top: 40px;
+    padding-right: 38px;
+  }
+
+  .universal {
+    font-size: 18px;
+  }
+
+  .textTitle {
+    font-size: 14px;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+
+  .textInfo {
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .arrow {
+    padding-right: 24px;
+    padding-bottom: 16px;
+  }
+
+  .date {
+    font-size: 14px;
+    padding-left: 16px;
+    margin-top: 40px;
+  }
+
+  .viewEvent {
+    font-size: 14px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    padding-left: 16px;
+    font-size: 32px;
+  }
+
+  .filterWrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 32px;
+  }
+
+  .filterBy {
+    font-size: 16px;
+  }
+
+  .filteredList {
+    max-width: 50%;
+    width: 100%;
+  }
+
+  .filterItemRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+  }
+
+  .filterItem {
+    font-size: 14px;
+    margin: 24px 8px 0;
+  }
+
+  /* .filterItem:nth-child(2n) {
+    margin-right: 0;
+  } */
+
+  .sortByList {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .sortByDate {
+    font-size: 18px;
+    width: 100%;
+    text-align: right;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .newest {
+    min-width: 153px;
+    margin-top: 9px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .contPart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .textTitle {
+    padding-left: 32px;
+    padding-top: 32px;
+    font-size: 14px;
+  }
+
+  .textInfo {
+    padding: 16px 32px 0 32px;
+    font-size: 16px;
+  }
+
+  .image {
+    padding-top: 87%;
+  }
+
+  .arrow {
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
+
+  .date {
+    padding-left: 32px;
+  }
+
+  .viewEvent {
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
+
+  .more {
+    padding-right: 16px;
+  }
+
+  .universal {
+    font-size: 16px;
+  }
+}
